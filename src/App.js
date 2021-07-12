@@ -1,7 +1,11 @@
+import LeftScreen from "./components/LeftScreen";
+import RightScreen from "./components/RightScreen";
+
 function App() {
   return (
-    <div className="App">
-      <h1>React Pokedex</h1>
+    <div class="container">
+      <LeftScreen></LeftScreen>
+      <RightScreen></RightScreen>
     </div>
   );
 }
