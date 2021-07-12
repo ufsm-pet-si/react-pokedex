@@ -2,58 +2,58 @@ import React from "react";
 
 const RightScreen = () => {
   return (
-    <div class="right-screen">
-      <div class="right-screen-top">
+    <div className="right-screen">
+      <div className="right-screen-top">
         <div></div>
       </div>
-      <div class="right-screen-bottom">
-        <div class="info-container">
+      <div className="right-screen-bottom">
+        <div className="info-container">
           <div>
             <input
               id="search"
               type="text"
-              class="info-input"
+              className="info-input"
               placeholder="Busque um pokemon"
-              value="pikachu"
+              defaultValue="pikachu"
             />
-            <button class="info-button" onclick="requestAPI()">
+            <button className="info-button" onclick="requestAPI()">
               Buscar
             </button>
           </div>
-          <section class="info-screen">
-            <div id="categoria" class="info">
-              <div class="label">Categorias:</div>
-              <div class="desc" id="info-text">
+          <section className="info-screen">
+            <div id="categoria" className="info">
+              <div className="label">Categorias:</div>
+              <div className="desc" id="info-text">
                 - - -
               </div>
             </div>
-            <div id="tipo" class="info">
-              <div class="label">Tipo:</div>
-              <div class="desc" id="info-text">
+            <div id="tipo" className="info">
+              <div className="label">Tipo:</div>
+              <div className="desc" id="info-text">
                 - - -
               </div>
             </div>
-            <div id="tamanho" class="info">
-              <div class="label">Tamanho:</div>
-              <div class="desc" id="info-text">
+            <div id="tamanho" className="info">
+              <div className="label">Tamanho:</div>
+              <div className="desc" id="info-text">
                 - - -
               </div>
             </div>
-            <div id="peso" class="info">
-              <div class="label">Peso:</div>
-              <div class="desc" id="info-text">
+            <div id="peso" className="info">
+              <div className="label">Peso:</div>
+              <div className="desc" id="info-text">
                 - - -
               </div>
             </div>
-            <div id="evolution" class="info">
-              <div class="label">Evoluções:</div>
-              <div class="desc" id="info-text">
+            <div id="evolution" className="info">
+              <div className="label">Evoluções:</div>
+              <div className="desc" id="info-text">
                 - - -
               </div>
             </div>
-            <div id="bio" class="info">
-              <div class="label">Habilidades:</div>
-              <div class="desc" id="info-text">
+            <div id="bio" className="info">
+              <div className="label">Habilidades:</div>
+              <div className="desc" id="info-text">
                 - - -
               </div>
             </div>

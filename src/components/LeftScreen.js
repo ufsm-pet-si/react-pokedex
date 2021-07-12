@@ -2,25 +2,25 @@ import React from "react";
 
 const LeftScreen = () => {
   return (
-    <div class="left-screen">
-      <div class="left-screen-top">
-        <div class="led-container">
-          <div class="led led--blue"></div>
+    <div className="left-screen">
+      <div className="left-screen-top">
+        <div className="led-container">
+          <div className="led led--blue"></div>
         </div>
-        <div class="led led--red"></div>
-        <div class="led led--yellow"></div>
-        <div class="led led--green"></div>
+        <div className="led led--red"></div>
+        <div className="led led--yellow"></div>
+        <div className="led led--green"></div>
       </div>
-      <div class="left-screen-bottom">
-        <div class="main-screen">
-          <div class="main-screen-top-leds"></div>
-          <div id="display" class="main-display">
-            <div class="pokemon-image">
+      <div className="left-screen-bottom">
+        <div className="main-screen">
+          <div className="main-screen-top-leds"></div>
+          <div id="display" className="main-display">
+            <div className="pokemon-image">
               <img id="image" alt="" width="242.25" height="257.64" />
             </div>
           </div>
-          <div class="main-screen-speaker-led"></div>
-          <div class="main-screen-speaker">
+          <div className="main-screen-speaker-led"></div>
+          <div className="main-screen-speaker">
             <div></div>
             <div></div>
             <div></div>
@@ -28,12 +28,12 @@ const LeftScreen = () => {
           </div>
         </div>
       </div>
-      <div class="left-screen-hinge">
-        <div class="hinge"></div>
-        <div class="hinge"></div>
-        <div class="hinge"></div>
-        <div class="hinge"></div>
-        <div class="hinge-reflex"></div>
+      <div className="left-screen-hinge">
+        <div className="hinge"></div>
+        <div className="hinge"></div>
+        <div className="hinge"></div>
+        <div className="hinge"></div>
+        <div className="hinge-reflex"></div>
       </div>
     </div>
   );

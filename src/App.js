@@ -3,7 +3,7 @@ import RightScreen from "./components/RightScreen";
 
 function App() {
   return (
-    <div class="container">
+    <div className="container">
       <LeftScreen></LeftScreen>
       <RightScreen></RightScreen>
     </div>
