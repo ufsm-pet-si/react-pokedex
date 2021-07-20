@@ -1,19 +1,13 @@
 import React, { useState } from "react";
 import Axios from 'axios';
 
-const RightScreen = () => {
-  const [pokemonName, setPokemonName] = useState("pikachu");
-
+const RightScreen = (props) => {
   const [pokemon, setPokemon] = useState([
     { category: '---', type: ['---'], height: '---', weight: '---', evolution: '---', abilities: ['---'] }
   ]);
 
   const searchPokemon = async () => {
-    setPokemonName(pokemonName.toLowerCase());
-
-    document.getElementById('image').src = `https://img.pokemondb.net/artwork/large/${pokemonName}.jpg`;
-
-    const response = await Axios.get(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`);
+    const response = await Axios.get(`https://pokeapi.co/api/v2/pokemon/${props.pokemonName}`);
 
     const arrAbilities = response.data.abilities.map((curr) => {
       return `${curr.ability.name.replace('-', ' ')}\n`;
@@ -46,7 +40,7 @@ const RightScreen = () => {
   const requestPokemonSpecies = async () => {
     try {
       const response = await Axios.get(
-        `https://pokeapi.co/api/v2/pokemon-species/${pokemonName}`
+        `https://pokeapi.co/api/v2/pokemon-species/${props.pokemonName}`
       );
       return response.data;
     } catch (err) {
@@ -93,9 +87,9 @@ const RightScreen = () => {
               className="info-input"
               placeholder="Busque um pokemon"
               defaultValue="pikachu"
-              onChange={(event) => {
-                setPokemonName(event.target.value); 
-              }}
+              onChange={(event) =>
+                props.onChangePokemonName(event)
+              }
             />
             <button className="info-button" onClick={searchPokemon}>
               Buscar
