@@ -23,7 +23,7 @@ const RightScreen = (props) => {
 
     const arrEvolution = await requestEvolution(pokemonSpecies.evolution_chain.url);
 
-    setPokemon({category: arrCategory, type: arrTypes, height: response.data.height, weight: response.data.weight, evolution: arrEvolution, abilities: arrAbilities});
+    setPokemon({category: arrCategory, type: arrTypes, height: response.data.height/10 + " M", weight: response.data.weight/10 + " Kg", evolution: arrEvolution, abilities: arrAbilities});
   }
 
   const searchCatogory = (pokemonSpecies) => {
